@@ -6,7 +6,7 @@ public class Check {
 	public static void main(String[] args) { 
 		
 		System.out.print("printNameメソッド → ");
-		printName();
+		printName(firstName, lastName);
 		
 		
 		Pet pet1 = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
@@ -20,7 +20,7 @@ public class Check {
 	private static String firstName = "伊藤";
 	private static String lastName = "優芽";
 	
-	private static void printName() {
+	private static void printName(String firstName, String lastName) {
 		System.out.println(firstName + lastName);
 	}
 }
