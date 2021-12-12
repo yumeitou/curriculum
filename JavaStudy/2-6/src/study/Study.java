@@ -29,7 +29,7 @@ public class Study {
 
         // 問② 「(Calendar.MONTH) + 数値」の処理は、想定していない値となる可能性があります。
         // その理由をコメントへ記述してください。
-        // [JANUARY(実値=0)から定義されており、実際の月の値は、「-1」の値を保持しているため]
+        // [JANUARY(実値=0)から定義されており、実際の月の値は、「-1」の値を保持しているため「+1」としているが、年の加算減算は行われない為「13月、14月」などという表示になることがある]
         System.out.println(calendar.get(Calendar.YEAR));
         System.out.println(calendar.get(Calendar.MONTH) + 1);
         System.out.println(calendar.get(Calendar.DATE));
@@ -47,6 +47,7 @@ public class Study {
 		
 		
 
+        
 
         // うるう年判定
         printLeapYear(calendar.get(Calendar.YEAR));
